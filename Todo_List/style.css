@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@1,700&family=Lato:wght@700&family=Lobster&family=Nunito:ital,wght@1,1000&family=Roboto+Mono:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+
+body{
+    background: #000;
+    color: aliceblue;
+    font-family: Roboto Mono, monospace;
+}
+
+h2{
+    color: grey;
+
+}
+form{
+    color: grey;
+    background-color: #000;
+}
+
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+#title{
+    background: #000;
+}
+#description{
+    background: #000;
+    color: aliceblue;
+
+}
+#items{
+    color: aliceblue;
+    border: 2px solid grey;
+    border-radius: 10px ;
+    padding: 2px;
+}
+
+.table{
+    color: aliceblue;
+}
+
+h2{
+    color: grey;
+}
+
+.btn{
+    background: #000;
+    color: aliceblue;
+    border: none;
+    border: 0.1px solid #0d9ae7;
+}
+
+.btn:hover{
+    background: #0d9ae7;
+    color: #000;
+
+}

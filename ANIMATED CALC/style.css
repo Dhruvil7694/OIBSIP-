@@ -1,0 +1,155 @@
+/* google fonts - 'Lato',Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@1,700&family=Lato:wght@700&family=Lobster&family=Nunito:ital,wght@1,1000&family=Roboto+Mono:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@1,700&family=Lato:wght@700&family=Lobster&family=Nunito:ital,wght@1,1000&family=Roboto+Mono:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* defiing variables for future use */
+
+:root {
+  --bg-primary: #091921;
+  --white-color: #cdc4c4;
+  --white-lighter-1: rgba(255, 255, 255, 0.05);
+  --white-lighter-2: rgba(255, 255, 255, 0.06);
+  --white-lighter-3: rgba(255, 255, 255, 0.07);
+  --black-lighter: rgba(0, 0, 0, 0.2);
+  --red-color: rgba(13, 32, 236, 0.856);
+  --dark-purple: #eb300f;
+  --light-purple: #e47b19;
+  --light-hover-blue: #52524f;
+  --dark-pink: #69e80f;
+  --light-pink: #3e11e2;
+}
+
+body {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+  font-family: "Helvetica Neue";
+  margin-left: 20rem;
+}
+
+
+
+
+.main {
+  position: relative;
+  right: 170px;
+  width: 20rem;
+  height: 20rem;
+  padding: 30px;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  padding-top: 100px;
+  background-color: var(--white-lighter-1);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid var(--white-lighter-2);
+  border-left: 1px solid var(--white-lighter-2);
+  box-shadow: 5px 5px 30px var(--black-lighter);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+}
+
+
+
+.calc {
+  position: absolute;
+  bottom: 1.5rem;
+  width: 20rem;
+  height: 17rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  border-radius: 15px;
+  margin-bottom: 5rem;
+}
+
+.equal {
+  position: absolute;
+  top: 18rem;
+  width: 20rem;
+  height: 3.5rem;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+  grid-template-columns: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.heading {
+  font-family: "Lato" sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #cdc4c4;
+  position: relative;
+  top: -5.8rem;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 5px;
+  color: var(--white-color);
+  cursor: pointer;
+  background: var(--white-lighter-1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px var(--black-lighter);
+  backdrop-filter: blur(4.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 1px solid var(--white-lighter-3);
+  border-style: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--light-hover-blue);
+}
+
+.form {
+  width: fit-content;
+}
+
+#display {
+  position: relative;
+  width: 20rem;
+  bottom: 5rem;
+  background: transparent;
+  border: none;
+  color: var(--white-color);
+  padding-top: 1.3rem;
+  text-align: right;
+  padding-bottom: 1.2rem;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  outline-style: none;
+  pointer-events: none;
+}
+
+.clear,
+.clear:hover {
+  background: var(--red-color);
+}
+
+.clear:hover {
+  background-color: #6042ca;
+}
+
+@media (max-width: 412px) {
+  .main {
+    right: 50px;
+    bottom: 130px;
+  }
+  .circle {
+    left: 25px;
+    top: -300px;
+  }
+}
